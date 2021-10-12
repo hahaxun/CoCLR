@@ -45,7 +45,7 @@ def read_json(path):
 
 class UCF101LMDB_2CLIP(object):
     def __init__(self, root='%s/../process_data/data/ucf101' % os.path.dirname(os.path.abspath(__file__)), 
-                 db_path=os.path.join(lmdb_root, 'UCF101/ucf101_frame.lmdb'),
+                 db_path=os.path.join(lmdb_root, 'ucf101_frame.lmdb'),
                  transform=None, mode='val',
                  num_frames=32, ds=1, which_split=1,
                  window=False, 
